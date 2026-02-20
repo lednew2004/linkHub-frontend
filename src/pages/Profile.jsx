@@ -88,13 +88,13 @@ export function Profile() {
           ))}
         </div>
 
-        <footer className="mt-20 flex flex-col items-center gap-6 pb-12">
-          {/* Botão de Conversão Viral */}
+        <footer className="mt-20 flex flex-col items-center gap-8 pb-12">
+          {/* Botão de Conversão Viral (Mantido) */}
           <Link
             to="/"
             className="group flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 px-5 py-2.5 rounded-full transition-all backdrop-blur-sm"
           >
-            <span className="text-gray-400 text-sm group-hover:text-white transition-colors">
+            <span className="text-gray-400 text-sm group-hover:text-white transition-colors font-medium">
               Crie sua página também
             </span>
             <div className="w-6 h-6 bg-green-500 rounded-lg flex items-center justify-center text-black font-black text-[10px] shadow-[0_0_15px_rgba(34,197,94,0.3)] group-hover:scale-110 transition-transform">
@@ -102,10 +102,21 @@ export function Profile() {
             </div>
           </Link>
 
-          {/* Logo discreta */}
-          <span className="text-xs font-bold tracking-[0.3em] uppercase opacity-20 hover:opacity-100 transition-opacity bg-clip-text text-transparent bg-linear-to-r from-green-400 to-blue-500">
-            LinkDev Pro
-          </span>
+          {/* Assinatura de Desenvolvedor Melhorada */}
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-600">
+              Desenvolvido por
+            </span>
+            <a
+              href="mailto:wendellkauan870@gmail.com" // Ou seu link do GitHub
+              className="group relative flex items-center gap-2 px-4 py-1.5 bg-white/5 rounded-full border border-white/5 hover:border-green-500/30 transition-all"
+            >
+              <span className="text-sm font-black tracking-tight text-gray-400 group-hover:text-white transition-colors">
+                Wendell <span className="text-green-500">Kauan</span>
+              </span>
+              <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+            </a>
+          </div>
         </footer>
       </div>
     </div>
